@@ -1,0 +1,9 @@
+body {
+  background-color: #eeeeee;
+}
+
+.content-card.mdl-card{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}

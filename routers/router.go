@@ -7,6 +7,6 @@ import (
 
 func init() {
 	beego.Router("/", &controllers.Index{})
-	beego.Router("/post", &controllers.Posts{})
+	beego.Router("/:dir:string/:page:string", &controllers.About{})
 	beego.Router("*", &controllers.ErrorPage{})
 }
