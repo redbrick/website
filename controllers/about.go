@@ -18,7 +18,6 @@ func (a *About) Get() {
 	response, _ := models.GetData(dir, file)
 	body, _ := ioutil.ReadAll(response.Body)
 	output := blackfriday.MarkdownBasic(body)
-	fmt.Print(string(output))
 	if response.StatusCode == 404 {
 		a.Abort("404")
 	}

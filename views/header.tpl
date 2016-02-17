@@ -1,4 +1,3 @@
-<!-- Always shows a header, even in smaller screens. -->
   <header class="mdl-layout__header mdl-color--red-600">
     <div class="mdl-layout__header-row">
       <!-- Title -->

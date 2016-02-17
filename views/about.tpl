@@ -6,10 +6,12 @@
   </head>
 
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="mdl-layout__header mdl-layout--fixed-header">
       {{template "header.tpl"}}
 
-      {{template "committee.tpl" .}}
+      <div class="content">
+        {{template "committee.tpl" .}}
+      </div>
 
       {{template "footer.tpl"}}
     </div>
