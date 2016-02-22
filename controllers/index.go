@@ -8,6 +8,6 @@ type Index struct {
 	beego.Controller
 }
 
-func (i *Index) Get() {
-	i.TplNames = "index.tpl"
+func (this *Index) Get() {
+	this.TplName = "index.tpl"
 }

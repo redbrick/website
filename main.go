@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-	_ "github.com/redbrick/redbrick-backend/routers"
+	_ "github.com/redbrick/website/routers"
 )
 
 func main() {

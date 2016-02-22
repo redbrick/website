@@ -9,5 +9,5 @@ type ErrorPage struct {
 }
 
 func (errors *ErrorPage) Get() {
-	errors.TplNames = "error.tpl"
+	errors.TplName = "error.tpl"
 }

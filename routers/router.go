@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/redbrick/redbrick-backend/controllers"
+	"github.com/redbrick/website/controllers"
 )
 
 func init() {

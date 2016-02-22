@@ -1,9 +1,8 @@
 package controllers
 
 import (
-	"fmt"
 	"github.com/astaxie/beego"
-	"github.com/redbrick/redbrick-backend/models"
+	"github.com/redbrick/website/models"
 	"github.com/russross/blackfriday"
 	"io/ioutil"
 )
@@ -12,16 +11,16 @@ type About struct {
 	beego.Controller
 }
 
-func (a *About) Get() {
-	dir := a.Ctx.Input.Param(":dir")
-	file := a.Ctx.Input.Param(":page")
+func (this *About) Get() {
+	dir := this.Ctx.Input.Param(":dir")
+	file := this.Ctx.Input.Param(":page")
 	response, _ := models.GetData(dir, file)
 	body, _ := ioutil.ReadAll(response.Body)
-	output := blackfriday.MarkdownBasic(body)
+	output := blackfriday.MarkdownCommon(body)
 	if response.StatusCode == 404 {
-		a.Abort("404")
+		this.Abort("404")
 	}
-	a.Data["breadcrumb"] = []string{dir, file}
-	a.Data["markdown"] = string(output)
-	a.TplNames = "about.tpl"
+	this.Data["breadcrumb"] = []string{dir, file}
+	this.Data["markdown"] = string(output)
+	this.TplName = "about.tpl"
 }
