@@ -7,8 +7,8 @@
   </head>
 
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    {{template "header.tpl"}}
-  </div>
+    <div class="container">
+      {{template "header.tpl"}}
+    </div>
   </body>
 </html>
