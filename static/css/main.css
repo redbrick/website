@@ -1,0 +1,23 @@
+body {
+  background-color: #eeeeee;
+}
+
+.content-card.mdl-card{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.brand-logo {
+    padding-left: 2em !important;
+}
