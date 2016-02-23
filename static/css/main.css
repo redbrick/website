@@ -17,3 +17,7 @@ a{
   text-decoration: none;
   color: white;
 }
+
+.brand-logo {
+    padding-left: 2em !important;
+}

@@ -7,9 +7,7 @@
   </head>
 
   <body>
-    <div class="container">
       {{template "header.tpl"}}
       {{template "footer.tpl" .}}
-    </div>
   </body>
 </html>
