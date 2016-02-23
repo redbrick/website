@@ -6,12 +6,13 @@
   </head>
 
   <body>
+    {{template "header.tpl"}}
     <div class="container">
-      {{template "header.tpl"}}
       <div class="content">
         {{template "committee.tpl" .}}
       </div>
     </div>
+    {{template "footer.tpl" .}}
 
   </body>
 </html>
