@@ -1,0 +1,8 @@
+language: go
+go:
+  - 1.5
+  - 1.6
+  - release
+  - tip
+notifications:
+  slack: rbcmt:VZl3z0qjKPCG5MzX12WrP051
