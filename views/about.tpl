@@ -13,6 +13,5 @@
       </div>
     </div>
     {{template "footer.tpl" .}}
-
   </body>
 </html>
